@@ -1,0 +1,29 @@
+{
+  "name": "githubapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "migrations": " npx knex migrate:latest --knexfile db/knexfile.js",
+    "for_init": "npx knex migrate:make init --migrations-directory db/migrations"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "jsonwebtoken": "^9.0.2",
+    "knex": "^3.1.0",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0",
+    "passport-session": "^1.0.2",
+    "pg": "^8.11.3"
+  }
+}
